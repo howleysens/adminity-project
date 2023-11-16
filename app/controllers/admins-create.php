@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     if(empty($errors)) {
         $db->query("INSERT INTO `admins_list` (`avatar`, `nickname`, `admin_lvl`, `rebuke`) VALUES (?, ?, ?, ?)", [
-            $_POST['avatar'], $_POST['nickname'], $_POST['admin_lvl'], 0
+            htmlspecialchars($_POST['avatar']), htmlspecialchars($_POST['nickname']), htmlspecialchars($_POST['admin_lvl']), 0
         ]);
         echo 'Успешно!';
     } else {

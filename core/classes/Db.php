@@ -14,7 +14,7 @@ class Db
         }
     }
 
-    public function query($query, $params=[])
+    public function query($query, $params = [])
     {
         $stmt = $this->conn->prepare($query);
         $stmt->execute($params);
