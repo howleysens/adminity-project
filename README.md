@@ -27,12 +27,6 @@ Clone the project
 https://github.com/howleysens/adminity-project
 ```
 
-Clone the project
-
-```bash
-https://github.com/howleysens/adminity-project
-```
-
 Go to the project directory
 
 ```bash
